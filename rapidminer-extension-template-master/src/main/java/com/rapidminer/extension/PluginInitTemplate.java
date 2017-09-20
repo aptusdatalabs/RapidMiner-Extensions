@@ -20,7 +20,9 @@
  */
 package com.rapidminer.extension;
 
+import com.rapidminer.extension.operator.FBConfigurator;
 import com.rapidminer.gui.MainFrame;
+import com.rapidminer.tools.config.ConfigurationManager;
 
 
 /**
@@ -41,7 +43,10 @@ public final class PluginInitTemplate {
 		 * hook during start up. No initialization of the operators or renderers has taken place when
 		 * this is called.
 		 */
-		public static void initPlugin() {}
+		public static void initPlugin() {
+			
+			ConfigurationManager.getInstance().register(new FBConfigurator());
+		}
 
 		/**
 		 * This method is called during start up as the second hook. It is called before the gui of the

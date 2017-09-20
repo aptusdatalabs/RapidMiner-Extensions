@@ -33,6 +33,8 @@ import com.rapidminer.parameter.ParameterType;
 import com.rapidminer.parameter.ParameterTypeString;
 import com.rapidminer.tools.LogService;
 import com.rapidminer.tools.Ontology;
+import com.rapidminer.tools.config.ConfigurationManager;
+import com.rapidminer.tools.config.ParameterTypeConfigurable;
 
 public class MyOperator2 extends Operator {
 
@@ -53,13 +55,8 @@ public class MyOperator2 extends Operator {
 	public List<ParameterType> getParameterTypes(){
 		
 		List<ParameterType> types = super.getParameterTypes();
-		
-		types.add(new ParameterTypeString(
-				ACCESS_TOKEN,
-				"This parameter is the Access Token.",
-				"",
-				false
-				));
+		ParameterType type = new ParameterTypeConfigurable("FB Connection", "Choose a FB connection", "FB");
+		types.add(type);
 		types.add(new ParameterTypeString(
 				"Query",
 				"This parameter is the Search String.",
@@ -73,14 +70,18 @@ public class MyOperator2 extends Operator {
 	@Override
 	public void doWork() throws OperatorException{
 		LogService.getRoot().log(Level.INFO, "Doing Something...");
-			
+		
+		String connectionName = "";
 		String accessToken;
 		int recordNo = 25;
 		String searchString;
 		
-		
 		try {
-			accessToken = this.getParameterAsString("Access-Token");
+			connectionName = this.getParameterAsString("FB Connection");
+			FBConfigurable connection = null;
+			connection = (FBConfigurable) ConfigurationManager.getInstance().lookup("FB", connectionName,
+					getProcess().getRepositoryAccessor());
+			accessToken = connection.getParameter("access_token");
 			searchString = this.getParameterAsString("Query");
 			
 			LogService.getRoot().log(Level.INFO, "no. of records ---> "+recordNo);

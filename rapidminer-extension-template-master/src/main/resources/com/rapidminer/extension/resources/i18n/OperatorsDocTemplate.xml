@@ -24,6 +24,10 @@
       <key>my_operator2</key>
       <name>Find Pages</name>
     </operator>
+    <operator>
+      <key>fb_conn</key>
+      <name>FB Connection</name>
+    </operator>
     
     <group>
       <key>operator_test</key>

@@ -19,6 +19,12 @@
 				<class>com.rapidminer.extension.operator.MyOperator2</class>
 				<icon>icon.png</icon>				
 			</operator>
+			<operator>
+				<key>fb_conn</key>
+				<class>com.rapidminer.extension.operator.FBOperator</class>
+				<icon>icon.png</icon>				
+			</operator>
+
 		</group>
 	</group>
 
