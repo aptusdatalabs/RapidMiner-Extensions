@@ -26,7 +26,7 @@
     </operator>
     <operator>
       <key>fb_conn</key>
-      <name>FB Connection</name>
+      <name>Find Page Content</name>
     </operator>
     
     <group>
