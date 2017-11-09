@@ -10,12 +10,12 @@
 
 		<group key="operator_test">
 			<operator>
-				<key>my_operator</key>
+				<key>Find Posts</key>
 				<class>com.rapidminer.extension.operator.MyOperator</class>
 				<icon>icon.png</icon>				
 			</operator>
 			<operator>
-				<key>my_operator2</key>
+				<key>Find Pages</key>
 				<class>com.rapidminer.extension.operator.MyOperator2</class>
 				<icon>icon.png</icon>				
 			</operator>
