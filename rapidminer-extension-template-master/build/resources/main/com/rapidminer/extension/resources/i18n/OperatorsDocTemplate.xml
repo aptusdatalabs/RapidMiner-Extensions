@@ -17,21 +17,21 @@
     -->
     
     <operator>
-      <key>Find Posts</key>
+      <key>MyOperator</key>
       <name>Find Posts</name>
     </operator>
-    <operator>
-      <key>Find Pages</key>
+     <group>
+      <key>operatortest</key>
+      <name>Example Group</name>
+    </group>
+<!--     <operator>
+      <key>MyOperator2</key>
       <name>Find Pages</name>
     </operator>
     <operator>
       <key>fb_conn</key>
       <name>Find Page Content</name>
-    </operator>
-    
-    <group>
-      <key>operator_test</key>
-      <name>Example Group</name>
-    </group>
+    </operator> -->
+
 
 </operatorHelp>
