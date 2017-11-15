@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../rapidminerreferencemanual/documentation2html.xsl"?>
+<p1:documents xmlns:p1="http://rapid-i.com/schemas/documentation/reference/1.0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://rapid-i.com/schemas/documentation/reference/1.0 ">
+
+    <operator key="operator.template:fb_conn" locale="en"
+              version="6.0.000">
+        <title>Find Page Content</title>
+        <synopsis>This operator searches for Content for a particular Page ID.
+        </synopsis>
+        <text>
+            <paragraph>With the Find Page Content operator, you can specify a Facebook Page and receive a list of contents of that Page</paragraph>
+            <paragraph>Select a Facebook connection to specify the Facebook account for the Facebook API access. Specify the user name or the user ID to get information about the user.</paragraph>
+        </text>
+        <inputPorts>
+<!--             <port name="input" type="com.rapidminer.example.ExampleSet">
+                Input port description.
+            </port> -->
+        </inputPorts>
+        <outputPorts>
+            <port name="output" type="com.rapidminer.example.ExampleSet">
+                An example set consisting of data from the Facebook API. This comprises the message, creation date and ID.
+            </port>
+        </outputPorts>
+
+        <!-- description of the parameters and the corresponding values -->
+        <parameters>
+            <parameter key="Page ID" type="string">
+                The id of the Facebook page.
+            </parameter>
+            <parameter key="FB Connection" type="configurable">
+                The connection details for the Facebook connection have to be specified. If you have already configured a Facebook connection, you can select it from the drop-down list. If you have not configured a Facebook connection yet, select the icon to the right of the drop-down list. Create a new Facebook connection in the Manage Connections box.
+            </parameter>
+        </parameters>
+
+<!--         <tutorialProcesses>
+            <tutorialProcess key="process.python.clustering" title="Clustering using Python">
+                <description>
+                    <paragraph>
+                        Tutorial description here.
+                    </paragraph>
+                </description>
+                <process version="6.4.000">
+                    <context>
+                        <input/>
+                        <output/>
+                        <macros/>
+                    </context>
+                    <operator activated="true" class="process" compatibility="6.4.000" expanded="true" name="Process">
+                        <process expanded="true">
+                            <operator activated="true" class="retrieve" compatibility="6.4.000" expanded="true" height="60" name="Retrieve Iris" width="90" x="380" y="210">
+                                <parameter key="repository_entry" value="//Samples/data/Iris"/>
+                            </operator>
+                            <connect from_op="Retrieve Iris" from_port="output" to_port="result 1"/>
+                            <portSpacing port="source_input 1" spacing="0"/>
+                            <portSpacing port="sink_result 1" spacing="0"/>
+                            <portSpacing port="sink_result 2" spacing="0"/>
+                        </process>
+                    </operator>
+                </process>
+            </tutorialProcess>
+        </tutorialProcesses> -->
+
+        <relatedDocuments>
+            <!-- ... -->
+        </relatedDocuments>
+    </operator>
+</p1:documents>

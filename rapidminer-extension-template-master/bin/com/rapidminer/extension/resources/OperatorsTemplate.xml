@@ -14,7 +14,7 @@
 				<class>com.rapidminer.extension.operator.MyOperator</class>
 				<icon>icon.png</icon>				
 			</operator>	  
-<!-- 			<operator>
+			<operator>
 				<key>MyOperator2</key>
 				<class>com.rapidminer.extension.operator.MyOperator2</class>
 				<icon>icon.png</icon>				
@@ -23,7 +23,7 @@
 				<key>fb_conn</key>
 				<class>com.rapidminer.extension.operator.FBOperator</class>
 				<icon>icon.png</icon>				
-			</operator> -->
+			</operator>
 		</group>
 
 </operators>
