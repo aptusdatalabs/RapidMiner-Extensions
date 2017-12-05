@@ -32,9 +32,9 @@ import com.rapidminer.tools.config.ConfigurationManager;
  *
  * @author REPLACEME
  */
-public final class PluginInitTemplate {
+public final class PluginInitFacebook {
 
-		private PluginInitTemplate() {
+		private PluginInitFacebook() {
 				// Utility class constructor
 		}
 

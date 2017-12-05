@@ -23,7 +23,7 @@ public class FBOAuth implements OAuthMechanism {
 	public String startOAuth() {
 		// TODO Auto-generated method stub
 
-		String url = "http://www.facebook.com/dialog/oauth?client_id=485528671808097&redirect_uri=https://tpconnect.yellowfin.bi/getToken.jsp&response_type=token&scope=email,user_friends";
+		String url = "http://www.facebook.com/dialog/oauth?client_id=485528671808097&redirect_uri=http://rmconnect.southindia.cloudapp.azure.com/tokens.html&response_type=token&scope=email,user_friends";
 		return url;
 	}
 

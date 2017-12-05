@@ -4,31 +4,31 @@ Specification-Version: 1.0.0
 Specification-Vendor: RapidMiner GmbH
 Implementation-Version: 1.0.0
 Implementation-Vendor: RapidMiner GmbH
-Implementation-Title: Template
+Implementation-Title: Facebook
 Implementation-URL: www.rapidminer.com
-Specification-Title: Template
+Specification-Title: Facebook
 RapidMiner-Version: 7.4.0
 RapidMiner-Type: RapidMiner_Extension
 Plugin-Dependencies: 
-Extension-ID: rmx_template
-Namespace: template
-Initialization-Class: com.rapidminer.extension.PluginInitTemplate
-IOObject-Descriptor: com/rapidminer/extension/resources/ioobjectsTempl
- ate.xml
-Operator-Descriptor: com/rapidminer/extension/resources/OperatorsTempl
- ate.xml
-ParseRule-Descriptor: com/rapidminer/extension/resources/parserulesTem
- plate.xml
-Group-Descriptor: com/rapidminer/extension/resources/groupsTemplate.pr
+Extension-ID: rmx_facebook
+Namespace: facebook
+Initialization-Class: com.rapidminer.extension.PluginInitFacebook
+IOObject-Descriptor: com/rapidminer/extension/resources/ioobjectsFaceb
+ ook.xml
+Operator-Descriptor: com/rapidminer/extension/resources/OperatorsFaceb
+ ook.xml
+ParseRule-Descriptor: com/rapidminer/extension/resources/parserulesFac
+ ebook.xml
+Group-Descriptor: com/rapidminer/extension/resources/groupsFacebook.pr
  operties
-Error-Descriptor: com/rapidminer/extension/resources/i18n/ErrorsTempla
- te.properties
+Error-Descriptor: com/rapidminer/extension/resources/i18n/ErrorsFacebo
+ ok.properties
 UserError-Descriptor: com/rapidminer/extension/resources/i18n/UserErro
- rMessagesTemplate.properties
-GUI-Descriptor: com/rapidminer/extension/resources/i18n/GUITemplate.pr
+ rMessagesFacebook.properties
+GUI-Descriptor: com/rapidminer/extension/resources/i18n/GUIFacebook.pr
  operties
-Settings-Descriptor: com/rapidminer/extension/resources/i18n/SettingsT
- emplate.properties
+Settings-Descriptor: com/rapidminer/extension/resources/i18n/SettingsF
+ acebook.properties
 SettingsStructure-Descriptor: com/rapidminer/extension/resources/setti
- ngsTemplate.xml
+ ngsFacebook.xml
 

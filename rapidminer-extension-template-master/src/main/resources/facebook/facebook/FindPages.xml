@@ -4,33 +4,32 @@
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://rapid-i.com/schemas/documentation/reference/1.0 ">
 
-    <operator key="operator.template:fb_conn" locale="en"
+    <operator key="operator.facebook:FindPages" locale="en"
               version="6.0.000">
-        <title>Find Page Content</title>
-        <synopsis>This operator searches for Content for a particular Page ID.
+        <title>Find Pages</title>
+        <synopsis>This operator searches for Pages in facebook.
         </synopsis>
         <text>
-            <paragraph>With the Find Page Content operator, you can specify a Facebook Page and receive a list of contents of that Page</paragraph>
-            <paragraph>Select a Facebook connection to specify the Facebook account for the Facebook API access. Specify the user name or the user ID to get information about the user.</paragraph>
+            <paragraph>With the Find pages operator, you can specify a Facebook user and receive a list of pages of the query that you have given as input. The list of Pages contains additional data with context of the Page Id.</paragraph>
+            <paragraph>Select a Facebook connection to specify the Facebook account for the Facebook API access. Specify the user name or the user ID of interest. There are advanced parameters you can use to specify additional search restrictions.</paragraph>
         </text>
         <inputPorts>
 <!--             <port name="input" type="com.rapidminer.example.ExampleSet">
-                Input port description.
             </port> -->
         </inputPorts>
         <outputPorts>
             <port name="output" type="com.rapidminer.example.ExampleSet">
-                An example set consisting of data from the Facebook API. This comprises the message, creation date and ID.
+                An example set consisting of data from the Facebook API. This comprises the Page Name and the Page ID.
             </port>
         </outputPorts>
 
         <!-- description of the parameters and the corresponding values -->
         <parameters>
-            <parameter key="Page ID" type="string">
-                The id of the Facebook page.
-            </parameter>
             <parameter key="FB Connection" type="configurable">
                 The connection details for the Facebook connection have to be specified. If you have already configured a Facebook connection, you can select it from the drop-down list. If you have not configured a Facebook connection yet, select the icon to the right of the drop-down list. Create a new Facebook connection in the Manage Connections box.
+            </parameter>
+            <parameter key="Query" type="selection">
+                Specifies which page the user wants search by giving the screen name of the page.
             </parameter>
         </parameters>
 

@@ -23,12 +23,12 @@ import com.rapidminer.tools.Ontology;
 import com.rapidminer.tools.config.ConfigurationManager;
 import com.rapidminer.tools.config.ParameterTypeConfigurable;
 
-public class FBOperator extends Operator {
+public class FindPageContent extends Operator {
 
 	private InputPort exampleSetInput = getInputPorts().createPort("example set");
 	private OutputPort exampleSetOutput = getOutputPorts().createPort("example set");
 
-	public FBOperator(OperatorDescription description) {
+	public FindPageContent(OperatorDescription description) {
 		super(description);
 		// TODO Auto-generated constructor stub
 	}

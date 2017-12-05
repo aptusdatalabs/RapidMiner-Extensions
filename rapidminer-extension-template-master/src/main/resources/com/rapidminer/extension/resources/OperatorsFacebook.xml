@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<operators name="template" version="6.0"
-	docbundle="com/rapidminer/extension/resources/i18n/OperatorsDocTemplate">
+<operators name="facebook" version="6.0"
+	docbundle="com/rapidminer/extension/resources/i18n/OperatorsDocFacebook">
 
 		<!-- This is an example how to specify Operators and Operator groups. The 
 			Operator groups define where Operators will be located in the Operator tree. -->
@@ -8,20 +8,15 @@
 			<class>com.rapidminer.extension.operator.OperatorClass</class> </operator> 
 			</group> -->
 
-		<group key="operator_test">
+		<group key="facebook">  
 			<operator>
-				<key>MyOperator</key>
-				<class>com.rapidminer.extension.operator.MyOperator</class>
-				<icon>icon.png</icon>				
-			</operator>	  
-			<operator>
-				<key>MyOperator2</key>
-				<class>com.rapidminer.extension.operator.MyOperator2</class>
+				<key>FindPages</key>
+				<class>com.rapidminer.extension.operator.FindPages</class>
 				<icon>icon.png</icon>				
 			</operator>
 			<operator>
-				<key>fb_conn</key>
-				<class>com.rapidminer.extension.operator.FBOperator</class>
+				<key>FindPageContent</key>
+				<class>com.rapidminer.extension.operator.FindPageContent</class>
 				<icon>icon.png</icon>				
 			</operator>
 		</group>

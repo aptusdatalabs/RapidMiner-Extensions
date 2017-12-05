@@ -36,17 +36,17 @@ import com.rapidminer.tools.Ontology;
 import com.rapidminer.tools.config.ConfigurationManager;
 import com.rapidminer.tools.config.ParameterTypeConfigurable;
 
-public class MyOperator2 extends Operator {
+public class FindPages extends Operator {
 
 	
 	private static final String ACCESS_TOKEN = "Access-Token";
 	private final String USER_AGENT = "Google Chrome";
 	
-	private InputPort exampleSetInput = getInputPorts().createPort("example set");
+	//private InputPort exampleSetInput = getInputPorts().createPort("example set");
 	private OutputPort exampleSetOutput = getOutputPorts().createPort("example set");
 	
 	
-	public MyOperator2(OperatorDescription description) {
+	public FindPages(OperatorDescription description) {
 		super(description);
 		// TODO Auto-generated constructor stub
 	}

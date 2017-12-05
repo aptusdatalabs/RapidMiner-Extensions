@@ -9,19 +9,15 @@
 	<!-- <group> <key>example_group</key> <name>Example Group</name> </group> -->
 
 	<operator>
-		<key>MyOperator</key>
-		<name>Find Posts</name>
-	</operator>
-	<operator>
-		<key>MyOperator2</key>
+		<key>FindPages</key>
 		<name>Find Pages</name>
 	</operator>
 	<operator>
-		<key>fb_conn</key>
+		<key>FindPageContent</key>
 		<name>Find Page Content</name>
 	</operator>
 	<group>
-		<key>operator_test</key>
+		<key>facebook</key>
 		<name>Example Group</name>
 	</group>
 
