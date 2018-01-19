@@ -1,0 +1,9 @@
+bin
+build
+.gradle/
+target/
+.settings/
+.classpath
+.project
+.pmd
+config/pmd/ruleset.xml

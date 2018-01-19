@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<operators name="pmml" version="5.0" docbundle="com/rapidminer/resources/i18n/OperatorsDocPMML">
+   <group key="data_access">
+      <group key="files">
+         <group key="write">
+            <operator>
+               <key>write_pmml</key>
+               <class>com.rapidminer.operator.io.pmml.PMMLExporter</class>
+            </operator>
+         </group>
+      </group>
+   </group>
+</operators>

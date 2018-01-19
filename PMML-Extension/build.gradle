@@ -1,0 +1,42 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    jcenter()
+    maven { url 'https://maven.rapidminer.com/content/groups/public/' }
+    maven { url "https://plugins.gradle.org/m2/" }
+   }
+    dependencies {
+        classpath 'com.rapidminer.gradle:extension:0.8.2'
+        classpath 'com.rapidminer.gradle:extension-testing:0.2.6'
+        //classpath 'com.rapidminer.gradle:java-signing:0.1.0'
+    }
+}
+
+repositories {
+  mavenCentral()
+  jcenter()
+  maven { url 'https://maven.rapidminer.com/content/groups/public/' }
+  maven { url "https://plugins.gradle.org/m2/" }
+}
+
+apply plugin: 'com.rapidminer.extension'
+apply plugin: 'com.rapidminer.extension-testing'
+//apply plugin: 'com.rapidminer.java-signing'
+
+extensionConfig {
+	name 'PMML'
+	
+	dependencies { 
+			rapidminer '7.6.0' 
+			//extension namespace: 'professional', version: '7.3.0'
+	}
+}
+
+dependencies {
+	//JAR Verifier
+	//compile('com.rapidminer.license:rapidminer-license-jar-verifier:3.2.0')
+}
+
+codeQuality {
+	checkstyle = false
+}

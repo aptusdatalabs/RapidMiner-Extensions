@@ -1,0 +1,4 @@
+Changes in 7.0.0
+----------------
+* Ensure RapidMiner Studio 7.0 compatibility
+

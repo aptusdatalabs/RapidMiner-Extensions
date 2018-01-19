@@ -1,0 +1,4 @@
+Changes in 5.2.0
+----------------
+* fixed startup problems in some configurations
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<operatorHelp lang="en_EN">
+   <operator>
+      <name>Write PMML</name>
+      <synopsis>This operator will save the given model to an XML file of PMML 4.0 format.</synopsis>
+      <help>
+        &lt;p&gt;
+        This operator will write the given model to an XML file of PMML 4.0 format. This format is a standard
+        for data mining models and is understood by many data bases. It can be used for applying data mining models
+        directly in the database. This way it can be applied on a regular basis on huge amounts of data.
+        &lt;/p&gt;&lt;p&gt;
+        This operator supports the following models:
+        &lt;ul&gt;
+            &lt;li&gt;Decision Tree Models&lt;/li&gt;
+            &lt;li&gt;Rule Models&lt;/li&gt;
+            &lt;li&gt;Naive Bayes models for nominal attributes&lt;/li&gt;
+            &lt;li&gt;Linear Regression Models&lt;/li&gt;
+            &lt;li&gt;Logistic Regression Models&lt;/li&gt;
+            &lt;li&gt;Centroid based Cluster models like models of k-means and k-medoids&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/p&gt;
+      </help>
+      <key>write_pmml</key>
+   </operator>
+</operatorHelp>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../documentation2html.xsl"?>
+<p1:documents xmlns:p1="http://rapid-i.com/schemas/documentation/reference/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://rapid-i.com/schemas/documentation/reference/1.0                http://rapid-i.com/schemas/documentation/reference/1.0/documentation.xsd">
+	<!-- each operator should have a key that consists of "operator." plus the operator's key. -->
+	<operator key="operator.pmml:write_pmml" locale="en" version="7.0.000">
+	
+		<title>Write PMML</title>
+		
+		<synopsis>This operator will save the given model to an XML file of PMML 4.3 format.</synopsis>
+		
+		<text>
+			
+        <p>
+        This operator will write the given model to an XML file of PMML 4.3 format. This format is a standard
+        for data mining models and is understood by many data bases. It can be used for applying data mining models
+        directly in the database. This way it can be applied on a regular basis on huge amounts of data.
+        </p><p>
+        This operator supports the following models:
+        <ul>
+            <li>Decision Tree Models</li>
+            <li>Rule Models</li>
+            <li>Naive Bayes models for nominal attributes</li>
+            <li>Linear Regression Models</li>
+            <li>Logistic Regression Models</li>
+            <li>Centroid based Cluster models like models of k-means and k-medoids</li>
+            <li>Support Vector Machine</li>
+        </ul>
+        </p>
+      
+		</text>
+		
+		<!--
+		<differentiation>
+					<relatedDocument key=""></relatedDocument>
+		</differentiation>		
+		-->
+
+		<inputPorts>
+			<port name="model input" type="com.rapidminer.operator.Model">The model input port.</port>
+		</inputPorts>
+		
+		<outputPorts>
+			<port name="model output" type="com.rapidminer.operator.Model">The model output port.</port>
+		</outputPorts>
+		
+		
+		<parameters>
+			<parameter key="file">Specifies the file for saving the pmml.</parameter>
+			<parameter key="version">Determines which PMML version should be used for export.</parameter>
+		</parameters>
+
+		<!--
+		<relatedDocuments>
+					<relatedDocument key=""></relatedDocument>
+		</relatedDocuments>
+		-->
+		
+		<!--
+		<tutorialProcesses>
+			<tutorialProcess key="process.loop.subtract_mean" title="Subtracting the average of an attribute from all examples">
+				<description>
+					tutorialProcess description: What is done and shown here? You can use formated text here
+				</description>
+				Copy process from RapidMiner's XML view to here
+			</tutorialProcess>
+		</tutorialProcesses> 
+		-->
+		
+	</operator>
+</p1:documents>

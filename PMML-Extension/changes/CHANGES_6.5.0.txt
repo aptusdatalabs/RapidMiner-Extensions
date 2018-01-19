@@ -1,0 +1,4 @@
+Changes in 6.5.0
+----------------
+* Ensure RapidMiner Studio 6.5 compatibility
+
