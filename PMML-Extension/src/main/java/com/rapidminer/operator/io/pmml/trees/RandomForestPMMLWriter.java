@@ -1,4 +1,4 @@
-package com.rapidminer.operator.io.pmml;
+package com.rapidminer.operator.io.pmml.trees;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -9,6 +9,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import com.rapidminer.operator.UserError;
+import com.rapidminer.operator.io.pmml.AbstractSplitBasedModelPMMLWriter;
+import com.rapidminer.operator.io.pmml.PMMLVersion;
 import com.rapidminer.operator.learner.tree.Edge;
 import com.rapidminer.operator.learner.tree.ConfigurableRandomForestModel;
 import com.rapidminer.operator.learner.tree.Tree;

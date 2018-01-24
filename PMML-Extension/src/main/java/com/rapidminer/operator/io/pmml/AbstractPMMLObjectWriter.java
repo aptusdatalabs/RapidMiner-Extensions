@@ -41,10 +41,21 @@ import com.rapidminer.operator.IOObject;
 import com.rapidminer.operator.Model;
 import com.rapidminer.operator.UserError;
 import com.rapidminer.operator.clustering.CentroidClusterModel;
+import com.rapidminer.operator.io.pmml.Association.AssociationRulePMMLWriter;
+import com.rapidminer.operator.io.pmml.Distribution.DistributionModelPMMLWriter;
+import com.rapidminer.operator.io.pmml.NeuralNet.NeuralNetModelPMMLWriter;
+import com.rapidminer.operator.io.pmml.Svm.JMySVMModelPMMLWriter;
+import com.rapidminer.operator.io.pmml.clustering.CentroidClusterModelPMMLWriter;
+import com.rapidminer.operator.io.pmml.regression.LinearRegressionModelPMMLWriter;
+import com.rapidminer.operator.io.pmml.regression.LogisticRegressionModelPMMLWriter;
+import com.rapidminer.operator.io.pmml.regression.PolynomialRegressionPMMLWriter;
+import com.rapidminer.operator.io.pmml.trees.RandomForestPMMLWriter;
+import com.rapidminer.operator.io.pmml.trees.TreeModelPMMLWriter;
 import com.rapidminer.operator.learner.associations.AssociationRules;
 import com.rapidminer.operator.learner.bayes.SimpleDistributionModel;
 import com.rapidminer.operator.learner.functions.LinearRegressionModel;
 import com.rapidminer.operator.learner.functions.LogisticRegressionModel;
+import com.rapidminer.operator.learner.functions.PolynomialRegressionModel;
 import com.rapidminer.operator.learner.functions.kernel.JMySVMModel;
 import com.rapidminer.operator.learner.functions.neuralnet.ImprovedNeuralNetModel;
 import com.rapidminer.operator.learner.rules.RuleModel;
@@ -72,6 +83,7 @@ public abstract class AbstractPMMLObjectWriter implements PMMLObjectWriter {
 		WRITER.put(CentroidClusterModel.class, CentroidClusterModelPMMLWriter.class);
 		WRITER.put(ImprovedNeuralNetModel.class, NeuralNetModelPMMLWriter.class);
 		WRITER.put(ConfigurableRandomForestModel.class, RandomForestPMMLWriter.class);
+		WRITER.put(PolynomialRegressionModel.class, PolynomialRegressionPMMLWriter.class);
 	}
 	
 	public static PMMLObjectWriter getWriterForObject(IOObject object) throws UserError {

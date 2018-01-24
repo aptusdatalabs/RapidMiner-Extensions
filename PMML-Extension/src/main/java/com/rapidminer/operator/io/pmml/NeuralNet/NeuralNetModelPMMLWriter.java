@@ -20,7 +20,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see http://www.gnu.org/licenses/.
  */
-package com.rapidminer.operator.io.pmml;
+package com.rapidminer.operator.io.pmml.NeuralNet;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -33,6 +33,9 @@ import org.w3c.dom.Element;
 
 import com.rapidminer.example.Attribute;
 import com.rapidminer.operator.UserError;
+import com.rapidminer.operator.io.pmml.AbstractPredictionModelPMMLWriter;
+import com.rapidminer.operator.io.pmml.PMMLTranslation;
+import com.rapidminer.operator.io.pmml.PMMLVersion;
 import com.rapidminer.operator.learner.functions.neuralnet.ImprovedNeuralNetModel;
 import com.rapidminer.operator.learner.functions.neuralnet.InnerNode;
 import com.rapidminer.operator.learner.functions.neuralnet.InputNode;

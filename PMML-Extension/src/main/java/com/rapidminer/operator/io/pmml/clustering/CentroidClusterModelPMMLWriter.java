@@ -20,7 +20,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see http://www.gnu.org/licenses/.
  */
-package com.rapidminer.operator.io.pmml;
+package com.rapidminer.operator.io.pmml.clustering;
 
 import java.util.Collection;
 
@@ -31,6 +31,9 @@ import com.rapidminer.example.Attribute;
 import com.rapidminer.operator.UserError;
 import com.rapidminer.operator.clustering.CentroidClusterModel;
 import com.rapidminer.operator.clustering.Cluster;
+import com.rapidminer.operator.io.pmml.AbstractPMMLModelWriter;
+import com.rapidminer.operator.io.pmml.NotSupportedByPMMLException;
+import com.rapidminer.operator.io.pmml.PMMLVersion;
 import com.rapidminer.tools.math.similarity.DistanceMeasure;
 import com.rapidminer.tools.math.similarity.mixed.MixedEuclideanDistance;
 import com.rapidminer.tools.math.similarity.nominal.JaccardNominalSimilarity;

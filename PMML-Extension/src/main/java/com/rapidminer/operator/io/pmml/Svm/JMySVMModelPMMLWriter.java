@@ -20,11 +20,13 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see http://www.gnu.org/licenses/.
  */
-package com.rapidminer.operator.io.pmml;
+package com.rapidminer.operator.io.pmml.Svm;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import com.rapidminer.operator.io.pmml.AbstractKernelModelPMMLWriter;
+import com.rapidminer.operator.io.pmml.NotSupportedByPMMLException;
 import com.rapidminer.operator.learner.functions.kernel.JMySVMModel;
 import com.rapidminer.operator.learner.functions.kernel.jmysvm.kernel.Kernel;
 import com.rapidminer.operator.learner.functions.kernel.jmysvm.kernel.KernelDot;

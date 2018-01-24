@@ -20,15 +20,19 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see http://www.gnu.org/licenses/.
  */
-package com.rapidminer.operator.io.pmml;
+package com.rapidminer.operator.io.pmml.regression;
 
 import java.util.Collection;
+import java.util.logging.Level;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import com.rapidminer.operator.UserError;
+import com.rapidminer.operator.io.pmml.AbstractPredictionModelPMMLWriter;
+import com.rapidminer.operator.io.pmml.PMMLVersion;
 import com.rapidminer.operator.learner.functions.LinearRegressionModel;
+import com.rapidminer.tools.LogService;
 
 /**
  * A PMML Writer for LinearRegressionModels which currently support only regression or 
@@ -60,7 +64,7 @@ public class LinearRegressionModelPMMLWriter extends AbstractPredictionModelPMML
 		modelElement.setAttribute("modelType", "linearRegression");
 		modelElement.setAttribute("normalizationMethod", (isClassification) ? "logit": "none");
 		
-		
+		LogService.getRoot().log(Level.INFO, "Testttttt................." +model.getSecondLabel());
 		// creating mining schema
 		createMiningSchema(pmmlDocument, modelElement, model);
 		
