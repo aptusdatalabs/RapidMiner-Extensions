@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<operatorHelp lang="en_EN">
+    <!--  This is an example how to specify the translation of operator keys to names. -->
+  
+    <group>
+      <key>web_services</key>
+      <name>RestAPI</name>
+    </group>
+    
+    
+
+     <operator>
+      <key>get</key>
+      <name>GET Request</name>
+       <synopsis>To fetch your data</synopsis>
+        <tags>
+            <tag>Restful</tag>
+            <tag>Fetch Data</tag>
+              <tag>JSON</tag>
+                <tag>CSV</tag>
+                  <tag>Convert</tag>
+        </tags>
+    </operator>
+    
+         <operator>
+      <key>post</key>
+      <name>POST Request</name>
+       <synopsis>To fetch your data</synopsis>
+        <tags>
+            <tag>Restful</tag>
+            <tag>Fetch Data</tag>
+              <tag>Unirest</tag>
+                <tag>json</tag>
+        </tags>
+    </operator>
+    
+       <operator>
+      <key>put</key>
+      <name>PUT Request</name>
+       <synopsis>To manipulate your data</synopsis>
+        <tags>
+            <tag>Restful</tag>
+            <tag>Fetch Data</tag>
+                <tag>json</tag>
+        </tags>
+    </operator>
+    
+       <operator>
+      <key>patch</key>
+      <name>PATCH Request</name>
+       <synopsis>To manipulate your data</synopsis>
+        <tags>
+            <tag>Restful</tag>
+            <tag>Fetch Data</tag>
+                <tag>json</tag>
+        </tags>
+    </operator>
+    
+       <operator>
+      <key>delete</key>
+      <name>DELETE Request</name>
+       <synopsis>To delete your data</synopsis>
+        <tags>
+            <tag>Restful</tag>
+            <tag>Fetch Data</tag>
+                <tag>json</tag>
+        </tags>
+    </operator>
+    
+    
+
+</operatorHelp>

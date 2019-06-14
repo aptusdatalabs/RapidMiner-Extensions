@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../rapidminerreferencemanual/documentation2html.xsl"?>
+<p1:documents
+	xmlns:p1="http://rapid-i.com/schemas/documentation/reference/1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://rapid-i.com/schemas/documentation/reference/1.0 ">
+
+	<operator key="operator.restapis:post" locale="en"
+		version="6.0.000">
+		<title>Post Request</title>
+		<synopsis>Request that the resource at the URI do something with the
+			provided entity. Often POST is used to create a new entity, but it
+			can also be used to update an entity.
+		</synopsis>
+
+
+		<outputPorts>
+			<port name="output" type="com.rapidminer.example.ExampleSet">
+				The data if responded back via the url
+				is displayed through this port.
+			</port>
+		</outputPorts>
+
+		<!-- description of the parameters and the corresponding values -->
+		<parameters>
+			<parameter key="url" type="string">
+				Enter the url to reach
+			</parameter>
+			<parameter key="parameters" type="list">
+				The params for the http
+				request could be defined here
+			</parameter>
+			<parameter key="headers" type="list">
+				The headers for the http
+				request could be defined here
+			</parameter>
+			<parameter key="body category" type="drop-down">
+				The body type along
+				with the text/json/javascript/xml/html data could
+				be submitted.
+			</parameter>
+		</parameters>
+
+		<tutorialProcesses>
+			<tutorialProcess key="process.python.clustering"
+				title="POST Request">
+				<description>
+					<paragraph>
+						This tutorial includes the workflow of how a POST Rest
+						API operator works with any url.
+					</paragraph>
+				</description>
+				<process version="8.1.000">
+
+					<context>
+						<input />
+						<output />
+						<macros />
+					</context>
+					<operator activated="true" class="process"
+						compatibility="9.2.000" expanded="true" name="Process"
+						origin="GENERATED_TUTORIAL">
+						<parameter key="logverbosity" value="init" />
+						<parameter key="random_seed" value="2001" />
+						<parameter key="send_mail" value="never" />
+						<parameter key="notification_email" value="" />
+						<parameter key="process_duration_for_mail" value="30" />
+						<parameter key="encoding" value="SYSTEM" />
+						<process expanded="true">
+							<operator activated="true" class="restapis:post"
+								compatibility="1.0.000" expanded="true" height="68"
+								name="POST Request" origin="GENERATED_TUTORIAL" width="90"
+								x="246" y="85">
+								<parameter key="url" value="https://httpbin.org/post" />
+								<list key="parameters">
+									<parameter key="q" value="Query" />
+								</list>
+								<list key="headers">
+									<parameter key="head" value="1" />
+									<parameter key="body" value="2" />
+								</list>
+								<parameter key="body category" value="raw" />
+								<list key="key-value data">
+									<parameter key="key" value="key" />
+									<parameter key="value" value="value" />
+								</list>
+								<parameter key="raw data" value="text" />
+								<parameter key="text" value="Lorem Ipsum." />
+							</operator>
+							<connect from_op="POST Request" from_port="output"
+								to_port="result 1" />
+							<portSpacing port="source_input 1" spacing="0" />
+							<portSpacing port="sink_result 1" spacing="0" />
+							<portSpacing port="sink_result 2" spacing="0" />
+							<description align="center" color="gray"
+								colored="true" height="105" resized="false" width="180" x="197"
+								y="186">This operator
+								performs a POST request on the given URL
+							</description>
+							<description align="center" color="yellow"
+								colored="true" height="139" resized="false" width="126" x="29"
+								y="36">The input connection need not be connected, as the data will
+								be
+								fetched from the internet and not the repositories.
+							</description>
+							<description align="center" color="red"
+								colored="true" height="105" resized="false" width="180" x="439"
+								y="36">The result of
+								the request is shown as a JSON output
+							</description>
+						</process>
+					</operator>
+				</process>
+			</tutorialProcess>
+		</tutorialProcesses>
+
+
+		<relatedDocuments>
+			<!-- ... -->
+		</relatedDocuments>
+	</operator>
+</p1:documents>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<operators name="restapis" version="6.0" docbundle="com/rapidminer/extension/resources/i18n/OperatorsDocRestAPIs">
+    <group key="">
+        <!-- This is an example how to specify Operators and Operator groups. The Operator groups define
+                where Operators will be located in the Operator tree. -->
+      
+        <group key="web_services">
+     
+		<operator>
+			<key>get</key>
+			<class>com.rapidminer.extension.operator.GET
+			</class>
+			<icon>icon.png</icon>
+			
+
+		</operator>
+			<operator>
+			<key>post</key>
+			<class>com.rapidminer.extension.operator.POST
+			</class>
+			<icon>icon.png</icon>
+			
+
+		</operator>
+		
+	
+			<operator>
+			<key>put</key>
+			<class>com.rapidminer.extension.operator.PUT
+			</class>
+			<icon>icon.png</icon>
+			
+
+		</operator>
+		
+	
+			<operator>
+			<key>patch</key>
+			<class>com.rapidminer.extension.operator.PATCH
+			</class>
+			<icon>icon.png</icon>
+			
+
+		</operator>
+		
+	
+			<operator>
+			<key>delete</key>
+			<class>com.rapidminer.extension.operator.DELETE
+			</class>
+			<icon>icon.png</icon>
+			
+
+		</operator>
+         </group>
+     
+    </group>
+</operators>
